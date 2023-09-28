@@ -1,12 +1,13 @@
 package com.petersimmons.testsession.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Panier {
 
 
 
-    private List<Cours> liste;
+    private List<Cours> liste =  new ArrayList<>();
     public List<Cours> getListe() {
         return liste;
     }

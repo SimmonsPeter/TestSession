@@ -1,16 +1,17 @@
 package com.petersimmons.testsession.models;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 
 public class Inscription {
 
     private String nas;
-    private SimpleDateFormat date;
+    private LocalDate date;
     private List<Cours> cours;
 
-
-    //Getters & Setters
+    // Getters & Setters
 
     public String getNas() {
         return nas;
@@ -20,11 +21,11 @@ public class Inscription {
         this.nas = nas;
     }
 
-    public SimpleDateFormat getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(SimpleDateFormat date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

@@ -10,6 +10,9 @@ import java.util.List;
 public class Lab04DataContext {
 
     private List<Cours> listeCours =  new ArrayList<>();
+
+
+
     private List<Etudiant> listeEtudiants = new ArrayList<>();
     private List<Inscription> listeInscriptions= new ArrayList<>();
 
@@ -33,5 +36,12 @@ public class Lab04DataContext {
 
     public List<Cours> getListeCours() {
         return listeCours;
+    }
+
+    public List<Etudiant> getListeEtudiants() {
+        return listeEtudiants;
+    }
+    public Etudiant getEtudiant(String nas){
+        return listeEtudiants.stream().filter(etudiant->etudiant.getNas().equals(nas)).findFirst().orElse(null);
     }
 }

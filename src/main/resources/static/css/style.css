@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+#hero{
+    height: 510px;
+    background: url("../images/banner-web-development.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #f4f4f8;
+}
+.container {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+}
+.navbar {
+    border-bottom: 3px solid #17a2b8;
+}
+h2 {
+    border-bottom: 2px solid #17a2b8;
+    padding-bottom: 10px;
+}
+.nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+
+
+

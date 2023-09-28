@@ -1,5 +1,6 @@
 package com.petersimmons.testsession.controllers;
 
+import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -14,6 +15,12 @@ public class HomeController {
     @GetMapping("/accueil")
     public String accueil(){
         return "Accueil";
+    }
+
+    @GetMapping("/clearSession")
+    public String clearSession(HttpSession session) {
+        session.invalidate();
+        return "redirect:/accueil";
     }
 
 }

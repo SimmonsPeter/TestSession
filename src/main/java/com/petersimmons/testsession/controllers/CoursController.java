@@ -25,9 +25,10 @@ public class CoursController {
         return panier;
     }
     @GetMapping("/cours/liste")
-    public ModelAndView liste(){
+    public ModelAndView liste(HttpSession session){
         ModelAndView mv = new ModelAndView("listeCours");
-        mv.addObject("ListeCours",dataContext.getListeCours());
+        mv.addObject("listeCours",dataContext.getListeCours());
+        mv.addObject("panier",getPanier(session));
         return mv;
     }
 
